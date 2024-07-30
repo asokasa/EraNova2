@@ -1,0 +1,254 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background: #29CAFF;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+h1 {
+    margin: 0;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem; /* Use rem for responsive sizing */
+    font-weight: 600;
+    font-family: "Courgette", cursive;
+}
+
+h2{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 5%;
+    font-size: 3rem;
+    display: flex;
+    font-family: "Courgette", cursive;
+}
+
+.fellépők {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 60px;
+    background: #FF5900;
+    max-width: 40%;
+    max-height: 70%;
+    box-sizing: border-box;
+    margin: 15px auto;
+    
+}
+
+.sor {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.sor a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 900;
+    
+    font-size: 1.5rem; /* Use rem for responsive sizing */
+    padding: 5px;
+    transition: all 0.6s ease;
+
+}
+
+.sor a:hover {
+    color: #3fb9cf;
+    transform: scale(1.1);
+}
+
+.hely {
+    padding-top: 8%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 5%;
+}
+
+.hely_szoveg p {
+    font-size: 1.5rem; /* Use rem for responsive sizing */
+    display: flex;
+    justify-content: center;
+}
+
+.hely_szoveg h2 {
+    font-size: 2rem; /* Use rem for responsive sizing */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.progcim h2{
+    
+    padding-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.progcim{
+    padding-top: 8%;
+}
+
+.programok {
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+.oszlop {
+    flex: 1;
+    text-align: center;
+    border-radius: 30px;
+    background: #FFCB6B;
+    max-width: 90%;
+    max-height: 90%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    
+    
+}
+
+.oszlop:nth-child(3) {
+    grid-column: span 2;
+    text-align: center;
+    background-color: #FF5900;
+    
+
+}
+
+.oszlop h3{
+    font-size: 2rem;
+}
+
+
+
+.oszlop p {
+    font-size: 1.5rem; /* Use a more readable font size */
+    padding-left: 2%;
+    padding-right: 2%;  
+    padding-bottom: 2%;  
+    
+}
+
+.programok .oszlop p br {
+    margin-bottom: 5%; /* Adjust this value as needed */
+    display: block;
+    content: "";
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .asd {
+        display: none;
+    }
+
+    .sor a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+        padding-top: 2%;
+    }
+
+    .fellépők {
+        padding: 1rem 1.5rem;
+        max-width: 95%;
+    }
+
+    .sor a {
+        font-size: 1.2rem;
+        padding-top: 8px;
+    }
+
+    .sponsor-logo {
+        max-width: 80px; /* Reduce logo size on smaller screens */
+    }
+
+    .programok {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oszlop {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center; /* Ensure all columns are centered on small screens */
+    }
+
+    .oszlop:nth-child(3) {
+        grid-column: initial;
+        background: #FFCB6B;
+    }
+
+    .oszlop:nth-child(2){
+        background-color: #FF5900;
+    }
+
+    .hely {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .hely_szoveg p, .hely_szoveg h2 {
+        font-size: 1rem;
+    }
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }   
+}

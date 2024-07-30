@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EraNova Fesztivál</title>
+    
+    <link rel="stylesheet" href="fesztstyle.css">
+    <link rel="stylesheet" href="allsite.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+    <!--NavBar-->
+    <header class="container-fluid menu">
+        <div class="logo"><img src="FesztKepek/eranova_feher_lyukasztott_1.png" alt=""></div>
+        <nav>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><div class="aktiv"><a href="index.html">Főoldal</a></div></li>
+            <li><a href="fellepok.html">Fesztivál</a></li>
+            <li><a href="fesztival.html">Fesztivál</a></li>
+         </ul>
+          <ul>
+            <li class="hideOnMobile"><div class="aktiv"><a href="index.html">Főoldal</a></div></li>
+            <li class="hideOnMobile"><a href="media.html">Média</a></li>
+            <li class="hideOnMobile"><a href="fesztival.html">Fesztivál</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            
+         </ul>
+      </nav>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <script>function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      
+        }
+    
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        }
+        </script>
+    
+    
+        
+    <script>
+      window.addEventListener("scroll", function() {
+          if (window.innerWidth > 800) { // Check if the screen width is greater than 800px
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+          } else {
+              // Optionally, remove the sticky class if the width is less than or equal to 800px
+              var header = document.querySelector("header");
+              header.classList.remove("sticky");
+          }
+      });
+    
+      // Also add a resize event listener to remove the sticky class if the window is resized below 800px
+      window.addEventListener("resize", function() {
+          if (window.innerWidth <= 800) {
+              var header = document.querySelector("header");
+              header.classList.remove("sticky");
+          }
+      });
+    </script>
+
+
+
+    <h1>Összzenei fesztivál 2024</h1>
+
+
+
+    <h2>Fellépők</h2>
+    <section class="fellépők">
+
+        <div class="sor">
+            <a href="fellepok.html#cinkatrio" target="_blank">Cinka Trió</a>
+            <a href="fellepok.html#peti" target="_blank">Bősze Péter</a>
+            <a href="fellepok.html#sildervald" target="_blank">Sildervald</a>
+        </div>
+
+        <div class="sor">
+            <a href="fellepok.html#kuszob" target="_blank">Küszöb</a>
+            <a href="fellepok.html#maklikor" target="_blank">Máklikőr</a>
+            <a href="fellepok.html#semmi" target="_blank">Semmi</a>
+        </div>
+
+        <div class="sor">
+            <a href="fellepok.html#peti" target="_blank">EraNova</a>
+            <a href="fellepok.html#ditta" target="_blank">Rohmann Ditta</a>
+        </div>
+
+
+        
+        
+
+    </section>
+    <div class="progcim">
+        <h2>Menetrend</h2>
+    </div>
+
+    <section class="programok">
+        
+        
+        <div class="oszlop">
+            <h3>Csütörtök</h3>
+            <p> 
+                17:00 Fesztivál megnyitó<br>
+                18:30 Bárókerti Alkotóműhely<br>
+                19:30 Keller Dávid zongorakoncertje<br>
+                20:00 Bősze Péter<br>
+                20:30 Forráshangok<br>
+                21:30 Cinka Trió majd táncház
+            </p>
+        </div>
+        
+        <div class="oszlop">
+            <h3>Péntek</h3>
+            <p>
+                15:00 Szabó Csaba népművészeti előadása<br>
+                17:00  Rohmann Ditta és EraNova<br>
+                18:30 Szembeszél<br>
+                19:00 Sildervald<br>
+                20:30 Küszöb<br>
+                23:00 Era Nova Kamarazenekar
+            </p>  
+        </div>
+        
+        <div class="oszlop">
+            <h3>Szombat</h3>
+            <p>
+                15:30 Era Nova kamarakoncertek<br>
+                16:30 Bősze Ádám zenetörténész előadása<br>
+                19:00 Era Nova Kamarazenekar<br>
+                20:00 Máklikőr<br>
+                21:30 Semmi
+            </p>
+        </div>
+    
+    
+    </section>
+
+
+
+    <section class="hely">
+        <div class="hely_szoveg">
+            <h2>Helyszín</h2>
+            <p>Kemencés Vendégház és Pajtaszínház</p>
+            <p>8471 Nemeshany</p>
+            <p>Petőfi utca 198-200.</p>
+        </div>
+
+
+        <iframe class="asd" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6463.594835196421!2d17.360921865406624!3d47.067561786166145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47696d939e4f7675%3A0xdcf4aa41bddc1ae7!2zS2VtZW5jw6lzIHZlbmTDqWdow6F6!5e0!3m2!1sen!2sau!4v1721915211790!5m2!1sen!2sau" width="500vw" height="300vh" style="border:0; border-radius: 20px;" allowfullscreen=""  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+<footer>
+    <div class="footer-content">
+        
+        <div class="sponsors">
+            <a href="https://www.sponsor1.com" target="_blank">
+                <img src="FesztKepek/magyarfalu.png" alt="Sponsor 1" class="sponsor-logo">
+            </a>
+            <a href="https://www.sponsor2.com" target="_blank">
+                <img src="FesztKepek/Flag_of_Nemeshany.svg.png" alt="Sponsor 2" class="sponsor-logo">
+            </a>
+            <a href="https://www.sponsor3.com" target="_blank">
+                <img src="FesztKepek/megvalosult.jpg" alt="Sponsor 3" class="sponsor-logo">
+            </a>
+        </div>
+        <p>&copy;All rights reserved.</p>
+        <p>by: MBM</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

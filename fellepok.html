@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="eloadostyle.css">
+    <link rel="stylesheet" href="allsite.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+
+    <title>Előadók</title>
+</head>
+<body>
+
+     <!--NavBar-->
+     <header class="container-fluid menu">
+        <div class="logo"><img src="FesztKepek/eranova_feher_lyukasztott_1.png" alt=""></div>
+        <nav>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><div class="aktiv"></div><a href="fellepok.html">Fellépők</a></div></li>
+            <li><a href="galeria.html">Galéria</a></li>
+         </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="index.html">Főoldal</a></li>
+            <li class="hideOnMobile"><a href="galeria.html">Média</a></li>
+            <li class="hideOnMobile"><div class="aktiv"></div><a href="fellepok.html">Fellépők</a></div></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            
+         </ul>
+      </nav>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <script>function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      
+        }
+    
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        }
+        </script>
+    
+    
+        
+    <script>
+      window.addEventListener("scroll", function() {
+          if (window.innerWidth > 800) { // Check if the screen width is greater than 800px
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+          } else {
+              // Optionally, remove the sticky class if the width is less than or equal to 800px
+              var header = document.querySelector("header");
+              header.classList.remove("sticky");
+          }
+      });
+    
+      // Also add a resize event listener to remove the sticky class if the window is resized below 800px
+      window.addEventListener("resize", function() {
+          if (window.innerWidth <= 800) {
+              var header = document.querySelector("header");
+              header.classList.remove("sticky");
+          }
+      });
+    </script>
+
+
+
+
+    <h1>Line-up</h1>
+
+    <div class="eloado" id="cinkatrio">
+        <h2>Cinkatrio</h2>
+        <div class="info">
+            <p>Lorem ipsum dolor sit ameáááát, consectetur adipisicing elit. Nulla veniam tempore porro hic officiis accusantium exercitationem ab, architecto sequi, assumenda deleniti, enim magnam voluptates incidunt fugit maiores. Minima, rem provident!</p>
+            <img src="eloadok/Cinka.jpg" alt="Cinka-Trio" class="pic">
+        </div>
+
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/p/cinkatrio-100075962556119/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cinkatrio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/05s41Xj93OLfUKFcbSyvXT" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </div>
+
+
+    <div class="eloado" id="ditta">
+        <h2>Rohmann Ditta</h2>
+        <div class="info">
+            
+            <p>Lorem ipsum dolor sit ameáááát, consectetur adipisicing elit. Nulla veniam tempore porro hic officiis accusantium exercitationem ab, architecto sequi, assumenda deleniti, enim magnam voluptates incidunt fugit maiores. Minima, rem provident!</p>
+            <img src="eloadok/ditta.jpg" alt="Cinka-Trio" class="pic">
+        </div>
+
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/p/cinkatrio-100075962556119/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cinkatrio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/05s41Xj93OLfUKFcbSyvXT" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </div>
+
+
+
+    <div class="eloado" id="semmi">
+        <h2>Semmi</h2>
+        <div class="info">
+            <p>&nbsp;&nbsp;&nbsp;Akkor hát mégegyszer utoljára! Tehát, mi is a Semmi? A válasz: minden. Zenekar, vitaklub, szekta, család, néha zenészek, de legtöbbször csak átlagemberek. Dalaikban a mindenséget akarják versbe venni, de maguknál tovább még nem jutottak. A zenéjük egy utazás térben és időben. Egyik pillanatban még Woodstockon hallgatod a hatvanas évek rock and rollját, a másik pillanatban pedig már a kilencvenes évek alternatív dallamai szólnak egy lelakott, underground klubban.</p>
+            <img src="eloadok/semmi.jpg" alt="Se" class="pic">
+        </div>
+
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/semmizenekar/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/semmibandofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/4zIEONFFlYdvj8DhUvbFVk" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </div>
+
+    <div class="eloado" id="sildervald">
+        <h2>Sildervald</h2>
+        <div class="info">
+            <p>&nbsp;&nbsp;&nbsp;A Sildervald épp annyira könnyűzenei, mint világzenei együttes a Dunakanyarból. Nevük idegen eredetű, olyan utcára mondják, ahol a sok jelzőtábla hatására az ember egyszerűen elveszik. Ez utal a zenekar tagjainak változatos ízlésére és zenéjük összetettségére. Megalakulásuk óta magyar népzenét és verseket dolgoznak fel könnyűzenei formában. Hangszerelésüket olyan jellegzetes népihangszerekkel gazdagítják, mint a kecskeduda, a hosszúfurulya, a kaval és egyéb furulyák. Műfajukat blastfolknak nevezték el. Dalaikkal pedig a fiatalságot jellemző, lüktető életérzést igyekeznek hirdetni.</p>
+            <img src="eloadok/sildervald.png" alt="Sildervald" class="pic">
+        </div>
+
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/sildervald" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sildervald/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/0PV2CgdfRFTa1VPzm85YpH" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </div>
+
+
+    <div class="eloado" id="maklikor">
+        <h2>Máklikőr</h2>
+        <div class="info">
+            <p>Lorem ipsum dolor sit ameáááát, consectetur adipisicing elit. Nulla veniam tempore porro hic officiis accusantium exercitationem ab, architecto sequi, assumenda deleniti, enim magnam voluptates incidunt fugit maiores. Minima, rem provident!</p>
+            <img src="eloadok/maklikor.jpg" alt="Méklikőr" class="pic">
+        </div>
+
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/sildervald" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sildervald/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/artist/0PV2CgdfRFTa1VPzm85YpH" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </div>
+
+
+    <div class="eloado" id="peti">
+        <h2>Bősze Péter</h2>
+        <div class="info">
+            <p>Akkor hát mégegyszer utoljára! Tehát, mi is a Semmi? A válasz: minden. Zenekar, vitaklub, szekta, család, néha zenészek, de legtöbbször csak átlagemberek. Dalaikban a mindenséget akarják versbe venni, de maguknál tovább még nem jutottak. A zenéjük egy utazás térben és időben. Egyik pillanatban még Woodstockon hallgatod a hatvanas évek rock and rollját, a másik pillanatban pedig már a kilencvenes évek alternatív dallamai szólnak egy lelakott, underground klubban.</p>
+            <img src="eloadok/boszepeti.JPG" alt="Bősze Péter" class="pic">
+        </div>
+
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/peter.bosze.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/sildervald/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+    <footer>
+        <div class="footer-content">
+            
+            <div class="sponsors">
+                <a href="https://www.sponsor1.com" target="_blank">
+                    <img src="FesztKepek/magyarfalu.png" alt="Sponsor 1" class="sponsor-logo">
+                </a>
+                <a href="https://www.sponsor2.com" target="_blank">
+                    <img src="FesztKepek/Flag_of_Nemeshany.svg.png" alt="Sponsor 2" class="sponsor-logo">
+                </a>
+                <a href="https://www.sponsor3.com" target="_blank">
+                    <img src="FesztKepek/megvalosult.jpg" alt="Sponsor 3" class="sponsor-logo">
+                </a>
+            </div>
+            <p>&copy;All rights reserved.</p>
+            <p>by: MBM</p>
+        </div>
+    
+    </footer>
+
+
+</body>
+</html>
